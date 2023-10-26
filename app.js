@@ -1,3 +1,21 @@
+$(document).ready(function(){
+    function showWindow(){
+        $("#main").show()
+        $('html body').css('overflow', 'hidden');
+         setTimeout(hideWindow , 5000);
+    };
+    showWindow()
+    function hideWindow(){
+        $("#main").hide()
+        $('html body').css('overflow', 'visible')
+    };
+    // hideWindow()
+    setTimeout(showWindow,200)
+   $('#close-bnt').click(function(){
+    hideWindow()
+   });
+
+})
 // start of navbar
 var nav = document.querySelector('.nick');  
 
