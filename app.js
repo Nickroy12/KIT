@@ -7,7 +7,7 @@ $(document).ready(function(){
     showWindow()
     function hideWindow(){
         $("#main").hide()
-        $('html body').css('overflow', 'visible')
+        $('#page #page-body').css('overflow', 'visible')
     };
     // hideWindow()
     setTimeout(showWindow,200)
